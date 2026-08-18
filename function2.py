@@ -29,6 +29,18 @@ l = ["harry", "sanju", "an" ,"shuban"]
 print(rem(l, "sa"))
 
 
+def muitiply (n, m):
+    for i in range(1,11):
+        print(f"{n} * {i} = {n*i}")
+    for i in range(1, 11):
+         print(f"{m} * {i} = {m*i}")
+        
+      
+
+muitiply(10,29)
+
+
+
 
 
 
