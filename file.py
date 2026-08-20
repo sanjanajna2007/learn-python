@@ -19,7 +19,7 @@ with open("myfile.txt") as f:
 
     f = open("myfile.txt")
     content = f.read()
-    if("kidding" in content):
+    if("sorting" in content):
         print("yes this is correct file")
 
     else:
