@@ -1,18 +1,36 @@
-# class car:
-#     def __init__(self,rate):
-#         print("constructor is calling")
-#         self.rate = rate
-#     def walk(self):
+class car:
+    def __init__(self,car_id,year,price_per_day, status = "available", rented_days = 2):
+        print("constructor is calling")
+        self.car_id = car_id
+        self.year = year
+        self.price_per_day = price_per_day
+        self.status = status
+        self.rented_days = rented_days
 
-# c = car("doller")
+    def display_details(self):
+        print(f"car_id: {self.car_id}, year: {self.year},price_per_day: {self.price_per_day},status: {self.status} ")
 
-# c.walk()
+    def update_status(self, new_status):
+        self.status = new_status
+        print(f"car{self.car_id} status_updated to {self.status}")
 
-class employee:
-    language = "py"
-    sallary = 12000
+    def calculate_rented_days(self):
+        total_price = self.price_per_day * self.rented_days
+        print(f"total rental price for {total_price}")
 
-harry = employee()
-print(harry.language,harry.sallary  )
+
+car1 = car(1, 1969, 50) 
+car2 = car(2, 2000, 1200, 3 )
+
+car1.display_details()
+car2.calculate_rented_days()
+
+
+# class employee:
+#     language = "py"
+#     sallary = 12000
+
+# harry = employee()
+# print(harry.language,harry.sallary  )
 
 
