@@ -31,6 +31,21 @@ car2.calculate_rented_days()
 #     sallary = 12000
 
 # harry = employee()
-# print(harry.language,harry.sallary  )
+# print(harry.language,harry.sallary )
 
+class sanjana:
+    def __init__(self,work,sallary):
+        print("yeah it is loaded")
+        self.work = work
+        self.sallary = sallary
+
+    def show(self):
+        print(f"{self.work} this is her work")
+        print(f"{self.sallary} is this much")
+
+s1 = sanjana("softwere developer", 100000)
+s2 = sanjana("ml developer", 20000)
+
+s1.show()
+s2.show()
 
