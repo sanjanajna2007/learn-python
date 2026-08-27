@@ -32,9 +32,37 @@ class grandchild(child):
         self.cutename = cutename
 
 
-child = ("halemani", "sanju")
-print(f"{child.name} {child.surname}")
+child1 = child("halemani", "sanju")
+print(f"{child1.name} {child1.surname}")
 
-grandchild = ("halemani", "deepak","deepu")
+gc1 = grandchild("halemani", "deepak","deepu")
 
-print(f"{grandchild.name} |{grandchild.surname}, {grandchild.cutename}")
+print(f"{gc1.name} |{gc1.surname}, {gc1.cutename}")
+
+class calculate :
+    def __init__(self, n):
+        self.n = n
+
+    def __add__(self,other):
+        return self.n + other.n
+
+calci1 = calculate(2)
+calci2 = calculate(4)
+print(calci1 + calci2)
+
+
+class animal:
+    def make_sound(self):
+        print("anima is making sound")
+
+class dog(animal):
+    def make_sound(self):
+        print("bark")
+
+class cat(animal):
+    def make_sound(self):
+        print("meow")
+
+animals = [dog(), cat()]
+for animal in animals:
+    animal.make_sound()
