@@ -1,47 +1,47 @@
-# def add(a, b):
-#     return a+b
+def add(a, b):
+    return a+b
 
-# def sub(a, b):
-#     return a-b
+def sub(a, b):
+    return a-b
 
-# def mul(a, b):
-#     return a * b
+def mul(a, b):
+    return a * b
 
-# # a = int(input("enter a number"))
-# # b = int(input("enter second number"))
-# def display_menu():
-#     print("simple calculator")
-#     print("1. add")
-#     print("2. subtract")
-#     print("3. multiply")
-#     print("4. quite")
+# a = int(input("enter a number"))
+# b = int(input("enter second number"))
+def display_menu():
+    print("simple calculator")
+    print("1. add")
+    print("2. subtract")
+    print("3. multiply")
+    print("4. quite")
 
-# while(True):
-#     display_menu()
-#     choice = int(input("enter your choice: "))
-#     print("you entered ", choice)
+while(True):
+    display_menu()
+    choice = int(input("enter your choice: "))
+    print("you entered ", choice)
 
-#     if choice == 1:
-#         a = int(input("enter a number"))
-#         b = int(input("enter second number"))
-#         print("result: ", add(a , b))
+    if choice == 1:
+        a = int(input("enter a number"))
+        b = int(input("enter second number"))
+        print("result: ", add(a , b))
 
-#     elif choice == 2:
-#         a = int(input("enter a number"))
-#         b = int(input("enter second number"))
-#         print("result: ", sub(a,b))
+    elif choice == 2:
+        a = int(input("enter a number"))
+        b = int(input("enter second number"))
+        print("result: ", sub(a,b))
 
-#     elif choice == 3:
-#         a = int(input("enter a number"))
-#         b = int(input("enter second number"))
-#         print("result: ", mul(a , b))
+    elif choice == 3:
+        a = int(input("enter a number"))
+        b = int(input("enter second number"))
+        print("result: ", mul(a , b))
 
-#     elif choice == 4 :
-#         print("exit from the calculator")
-#         break
+    elif choice == 4 :
+        print("exit from the calculator")
+        break
 
-# else:
-#     print("invalid choice ....tru next time")
+else:
+    print("invalid choice ....tru next time")
 
 def menu():
     print("banking system")
@@ -68,6 +68,9 @@ while True:
 
     elif choice == 4:
         print("thank you for using our banking system")
+
+    elif choice == 5:
+        print("thank you for visiting")
 
     else:
         print("quitting")
