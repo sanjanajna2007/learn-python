@@ -1,8 +1,9 @@
-# file = open("notes.txt", "w")
-# file.write("sanjana")
-# content = file.readlines()
-# print(content)
-# file.close()
+with open("notes.txt", "w") as f:
+
+    f.write("sanjana")
+    content = f.readlines()
+    print(content)
+
 
 file = open("notes.txt", "w")
 try:
